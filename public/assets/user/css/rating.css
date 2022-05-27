@@ -1,0 +1,79 @@
+/*
+
+	Р РµР№С‚РёРЅРі
+
+*/
+.rating {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.rating:before{
+    font-family: FontAwesome;
+    content: "";
+    color:#fec939;
+    position: relative;
+    z-index: 2;
+}
+
+.rating:after {
+    font-family: FontAwesome;
+    content: "\f005  \f005  \f005  \f005  \f005";
+    color: #999;
+}
+.rating.r5:before{
+    content: "\f005  \f005  \f005  \f005  \f005";
+}
+
+.rating.r45:before{
+    content: "\f005  \f005  \f005  \f005  \f123";
+}
+
+.rating.r4:before{
+    content: "\f005  \f005  \f005  \f005";
+}
+
+.rating.r35:before{
+    content: "\f005  \f005  \f005  \f123";
+}
+
+.rating.r3:before{
+    content: "\f005  \f005  \f005";
+}
+
+.rating.r25:before{
+    content: "\f005  \f005  \f123";
+}
+
+.rating.r2:before{
+    content: "\f005  \f005";
+}
+.rating.r15:before{
+    content: "\f005  \f123";
+}
+.rating.r1:before{
+    content: "\f005";
+}
+
+.rating.r05:before{
+    content: "\f123";
+}
+
+.rating.r5:after, .rating.r45:after {
+    content: ""
+}
+.rating.r4:after, .rating.r35:after{
+    content: "\f006";
+}
+.rating.r3:after, .rating.r25:after{
+    content: "\f006 \f006";
+}
+.rating.r2:after, .rating.r15:after{
+    content: "\f006 \f006 \f006";
+}
+.rating.r1:after, .rating.r05:after{
+    content: "\f006 \f006 \f006 \f006";
+}
+.rating.r0:before{
+    content: "";
+}

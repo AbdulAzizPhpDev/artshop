@@ -1,0 +1,71 @@
+/* Arrows */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 40%;
+
+    display: block;
+
+    padding: 0;
+
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+.slick-prev {
+    left: -25px;
+}
+
+[dir='rtl'] .slick-prev {
+    right: -25px;
+    left: auto;
+}
+
+.slick-prev:before {
+    content: 'в†ђ';
+}
+
+[dir='rtl'] .slick-prev:before {
+    content: 'в†’';
+}
+
+.slick-next {
+    right: -25px;
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px;
+}
+
+.slick-next:before {
+    content: 'в†’';
+}
+
+[dir='rtl'] .slick-next:before {
+    content: 'в†ђ';
+}
+
+.slick-prev {
+    background: url("/assets/img/icons/featured_left_arrow.png") 50% 0px no-repeat;
+    width: 18px;
+    height: 33px;
+}
+
+.slick-next {
+    background: url("/assets/img/icons/featured_right_arrow.png") 50% 0px no-repeat;
+    width: 18px;
+    height: 33px;
+}
+
+.slick-dots {
+}
